@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>vue i18n transfer</h1>
+      <p>
+        全角文字チェッカー：<a
+          href="https://ao-system.net/doublecharcheck/"
+          target="_blank"
+          >https://ao-system.net/doublecharcheck/</a
+        >
+      </p>
+      <form>
+        <button id="pickUp" type="button" class="btn btn-secondary">
+          PickUp
+        </button>
+        <button id="transfer" type="button" class="btn btn-secondary">
+          Transfer
+        </button>
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="before">before</label>
+              <div id="before" style="width: 100%; height: 800px"></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="json">.json</label>
+              <div id="json" style="width: 100%; height: 800px"></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="after">after</label>
+              <div id="after" style="width: 100%; height: 800px"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      src="src-noconflict/ace.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="bundle.js"></script>
+  </body>
+</html>
