@@ -26,7 +26,7 @@ pickUp.addEventListener("click", function () {
   const values = pickUpValues(beforeText);
   // arrayから(stringsの)json形式に変える
   const text = arrayToJson(values);
-  // 表示
+
   json.getSession().setValue(text);
 });
 
@@ -36,9 +36,5 @@ transfer.addEventListener("click", function () {
     before.getSession().getValue(),
     json.getSession().getValue()
   );
-  // jsonから連想配列に変える
-  // 配列を文字数長い順に入れ替え
-  // 配列から長い順に.Vueを変換する
-  // 出力
   after.getSession().setValue(result);
 });
