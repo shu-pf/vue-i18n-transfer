@@ -7,17 +7,17 @@ import transferText from "./transfer";
 // aceエディタの初期設定
 /* @ts-ignore */
 let before = ace.edit("before");
-// before.setTheme("ace/theme/twilight");
+before.setTheme("ace/theme/monokai");
 before.session.setMode("ace/mode/html");
 
 /* @ts-ignore */
 let json = ace.edit("json");
-// json.setTheme("ace/theme/twilight");
+json.setTheme("ace/theme/monokai");
 json.session.setMode("ace/mode/json");
 
 /* @ts-ignore */
 let after = ace.edit("after");
-// after.setTheme("ace/theme/twilight");
+after.setTheme("ace/theme/monokai");
 after.session.setMode("ace/mode/html");
 
 let pickUp = document.getElementById("pickUp");
